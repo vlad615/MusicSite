@@ -1,0 +1,12 @@
+.resources {
+    display: flex;
+    gap: 20px;
+}
+
+.resource {
+    transition-duration: 0.5s;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}

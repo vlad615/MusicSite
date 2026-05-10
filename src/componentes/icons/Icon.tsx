@@ -10,7 +10,7 @@ type Props = {
 
 export const Icon = (props: Props) =>{
     return(
-        <svg width={props.width || 32} height={props.height || 32} viewBox={props.boxview || "0, 0, 32, 32"} fill={props.fill || ""}>
+        <svg width={props.width || 32} height={props.height || 32} viewBox={props.boxview || "0, 0, 32, 32"} fill={props.fill || "#191919"}>
             <use xlinkHref={`${SvgSprite}#${props.icon}`}/>
         </svg>
     )
