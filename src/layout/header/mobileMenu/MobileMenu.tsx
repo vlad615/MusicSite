@@ -13,7 +13,7 @@ export const MobileMenu = (menu: MenuProps) => {
             <button className={s.burgerBtn} onClick={changeMenuOpen}>
                 <span className={isOpen? s.closeBurger : s.openBurger}></span>
             </button>
-            {isOpen && <Menu {...menu} mobileMenu={true}/>}
+            {isOpen && <Menu {...menu} mobileMenu={true} onClick={changeMenuOpen}/>}
         </nav>
     )
 }
