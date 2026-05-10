@@ -14,7 +14,6 @@ export const MobileMenu = (menu: MenuProps) => {
                 <span className={isOpen? s.closeBurger : s.openBurger}></span>
             </button>
             {isOpen && <Menu {...menu} mobileMenu={true}/>}
-            
         </nav>
     )
 }

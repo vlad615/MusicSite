@@ -1,6 +1,7 @@
 import './App.scss'
 import { Header } from './layout/header/Header'
 import type { MenuProps } from './componentes/menu/Menu'
+import { Main } from './layout/sections/main/Main'
 
 export function App() {
   const menuItems: MenuProps = {menu: [
@@ -13,6 +14,7 @@ export function App() {
   return (
     <>
       <Header {...menuItems}/>
+      <Main />
     </>
   )
 }

@@ -103,7 +103,7 @@ nav img{
     position: absolute;
     width: 68px;
     height: 74px;
-    background-image: url("/accets/top.svg");
+    background-image: url("/top.svg");
     top: -25px;
     left: -25px;
 }

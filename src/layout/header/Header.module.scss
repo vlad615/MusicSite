@@ -2,7 +2,7 @@
 @use "../../styles/mixins.scss" as *;
 
 header{
-    padding: $basePadding 0;
+    padding: $basePadding+20 0;
 }
 
 .wrapper {
