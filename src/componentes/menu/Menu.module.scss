@@ -1,0 +1,26 @@
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/variables.scss" as *;
+
+.desktopMenu {
+    @include menu()
+}
+
+.mobileMenu {
+    @include menu(column, center, center, 600);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $primaryBg;
+    opacity: 90%;
+}
+
+.menuItem {
+    color: #fff;
+    transition-duration: 300ms;
+
+    &:hover{
+        color: #118da8;
+    }
+}

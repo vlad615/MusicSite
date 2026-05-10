@@ -1,0 +1,56 @@
+@use "../../../styles/variables.scss" as *;
+
+.burgerBtn {
+    background: transparent;
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    z-index: 99;
+}
+
+%burger {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: $textColor;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 2px;
+        right: 0;
+        background-color: $textColor;
+        transform: translateY(5px);
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 2px;
+        right: 0;
+        background-color: $textColor;
+        transform: translateY(-7px);
+    }
+}
+
+.openBurger {
+    @extend %burger
+}
+
+.closeBurger {
+    @extend %burger;
+    transform: rotate(45deg);
+
+    &::after {
+        width: 24px;
+        transform: rotate(90deg) translateY(0);
+    }
+
+    &::before {
+        display: none;
+    }
+}
