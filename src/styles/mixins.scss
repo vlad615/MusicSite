@@ -20,6 +20,12 @@
     line-height: 1.6;
 }
 
+@mixin title($wieght: 400, $size: 65px, $height: 1.25, $color: $textColor){
+    font-weight: $wieght;
+    font-size: $size;
+    line-height: $height;
+}
+
 @mixin media($media){
     @if $media == tablet{
         @media screen and (max-width: $tablet) { @content; }

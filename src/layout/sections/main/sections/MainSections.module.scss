@@ -29,9 +29,7 @@
 }
 
 h1 {
-    font-weight: 400;
-    font-size: 70px;
-    line-height: 1.26;
+    @include title(400, 70px);
     letter-spacing: 0.05em;
 
     @include media(phone) {
@@ -40,9 +38,8 @@ h1 {
 }
 
 .next {
-    font-size: 75px;
-    line-height: 1.17;
-    margin-right: 25px;
+    @include title(400, 75px, 1.1);
+    margin-right: 15px;
     position: relative;
 
     &::after {
@@ -63,11 +60,7 @@ h1 {
 }
 
 .level {
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 1.1;
-    letter-spacing: 0.04em;
-
+    @include title(700, 80px, 1.1);
     @include media(phone) {
         font-size: 50px;
     }

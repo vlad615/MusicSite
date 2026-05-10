@@ -1,0 +1,14 @@
+@use "../../styles/variables.scss" as *;
+
+.button {
+    border: 2px solid $accentColor;
+    border-radius: 6px;
+    background-color: $accentColor;
+    color: $textColor;
+    padding: 10px 15px 10px 20px;
+    transition: 0.5s;
+
+    &:hover{
+        background-color: transparent;
+    }
+}

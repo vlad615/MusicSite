@@ -1,0 +1,32 @@
+@use "../../../styles/mixins.scss" as *;
+
+.wrapper {
+    @include flexWrapper(column, null, null, null, 60px);
+    margin: 100px 0;
+
+    @include media(phone){
+        margin: 60px 0 20px;
+    }
+}
+
+.titleWrapper {
+    @include flexWrapper(null, space-between, center, null, 20px);
+
+    @include media(tablet){
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 40px;
+    }
+
+    @include media(phone){
+        margin: 0 0 40px 20px;
+    }
+}
+
+.title {
+    @include title();
+    @include media(phone){
+        font-size: 40px;
+        line-height: 1.3;
+    }
+}

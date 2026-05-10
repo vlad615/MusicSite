@@ -1,5 +1,6 @@
 import './App.scss'
 import { Header } from './layout/header/Header'
+import { Episodes } from './layout/sections/episodes/Episodes'
 import { Main } from './layout/sections/main/Main'
 
 export function App() {
@@ -33,6 +34,7 @@ export function App() {
     <>
       <Header menu={data.menu} />
       <Main resources={data.resources} />
+      <Episodes />
     </>
   )
 }
