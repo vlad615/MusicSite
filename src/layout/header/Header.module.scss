@@ -1,0 +1,11 @@
+@use "../../styles/variables.scss" as *;
+@use "../../styles/mixins.scss" as *;
+
+header{
+    padding: $basePadding $basePadding+50;
+    font-weight: 600;
+}
+
+.wrapper {
+    @include flexWrapper(row, space-between, center)
+}

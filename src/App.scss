@@ -1,0 +1,45 @@
+@use "./styles/variables.scss" as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border-style: none;
+    transition-duration: 100ms;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: transparent;
+    border: 2px solid $accentColor;
+    border-radius: 6px;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    color: $textColor;
+    background: $primaryBg;
+    min-width: 375px;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 $basePadding;
+}
