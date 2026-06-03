@@ -27,7 +27,9 @@
 }
 
 @mixin media($media){
-    @if $media == tablet{
+    @if $media == large{
+        @media screen and (max-width: $large) { @content; }
+    } @else if $media == tablet{
         @media screen and (max-width: $tablet) { @content; }
     } @else if $media == phone {
         @media screen and (max-width: $phone) { @content; }

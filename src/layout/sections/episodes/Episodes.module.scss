@@ -1,7 +1,6 @@
 @use "../../../styles/mixins.scss" as *;
 
 .wrapper {
-    @include flexWrapper(column, null, null, null, 60px);
     margin: 100px 0;
 
     @include media(phone){
@@ -11,6 +10,7 @@
 
 .titleWrapper {
     @include flexWrapper(null, space-between, center, null, 20px);
+    margin-bottom: 60px;
 
     @include media(tablet){
         flex-direction: column;

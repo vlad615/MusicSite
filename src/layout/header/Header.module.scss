@@ -6,5 +6,6 @@ header{
 }
 
 .wrapper {
+    position: relative;
     @include flexWrapper(row, space-between, center)
 }
