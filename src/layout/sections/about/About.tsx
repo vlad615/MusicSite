@@ -1,4 +1,5 @@
 import s from "./About.module.scss"
+import c from "../../../componentes/Components.module.scss"
 import img from "../../../accets/make-music.jpg"
 import btn from "../../../accets/Frame.png"
 
@@ -12,7 +13,7 @@ export const About = () => {
                         <a className={s.btn} href="">
                             <img src={btn} alt="frame" />
                         </a>
-                        <small className={s.small}>Meet your host</small>
+                        <small className={c.small}>Meet your host</small>
                         <h2 className={s.title}>Jacob Paulaner</h2>
                     <p className={s.description}>{`Jacob has a background in audio engineering, and has been podcasting since the early days.
 

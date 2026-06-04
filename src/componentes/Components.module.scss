@@ -1,4 +1,4 @@
-@use "../../styles/variables.scss" as *;
+@use "../styles/variables.scss" as *;
 
 .button {
     border: 2px solid $accentColor;
@@ -11,4 +11,11 @@
     &:hover{
         background-color: transparent;
     }
+}
+
+.small {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #118da8;
 }

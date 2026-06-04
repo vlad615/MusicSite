@@ -20,10 +20,11 @@
     line-height: 1.6;
 }
 
-@mixin title($wieght: 400, $size: 65px, $height: 1.25, $color: $textColor){
+@mixin title($wieght: 400, $size: 65px, $height: 1.2, $color: $titleColor){
     font-weight: $wieght;
     font-size: $size;
     line-height: $height;
+    color: $color;
 }
 
 @mixin media($media){

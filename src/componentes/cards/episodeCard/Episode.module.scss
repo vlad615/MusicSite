@@ -52,20 +52,11 @@
     margin-bottom: 50px;
 }
 
-.count {
-    font-size: 17px;
-    line-height: 1.5;
-    color: #118da8;
-    margin-bottom: 20px;
-}
-
 .title {
-    font-weight: 400;
-    max-width: 670px;
-    font-size: 64px;
+    @include title();
     line-height: 1.1;
     letter-spacing: 0.04em;
-    margin-bottom: 30px;
+    margin: 20px 0 30px;
 
     @include media(phone){
         margin-bottom: 40px;

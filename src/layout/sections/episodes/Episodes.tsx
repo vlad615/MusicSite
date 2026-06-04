@@ -1,5 +1,5 @@
 import s from "./Episodes.module.scss"
-import btn from "../../../componentes/buttons/Button.module.scss"
+import c from "../../../componentes/Components.module.scss"
 import { Episode, type EpisodeProps } from "../../../componentes/cards/episodeCard/Episode"
 
 type EpisodesProps = {
@@ -14,7 +14,7 @@ export const Episodes = ({ episodes }: EpisodesProps) => {
                 <div className={s.wrapper}>
                     <div className={s.titleWrapper}>
                         <h2 className={s.title}>Lates episodes</h2>
-                        <a className={btn.button} href="">View all episodes</a>
+                        <a className={c.button} href="">View all episodes</a>
                     </div>
 
                     {episodes.map((e, ind)=> <Episode {...e} count={ind+1}/>)}

@@ -1,5 +1,5 @@
 import s from "./Episode.module.scss"
-import btn from "./../../buttons/Button.module.scss"
+import c from "./../../Components.module.scss"
 
 export type EpisodeProps = {
     id: string
@@ -21,10 +21,10 @@ export const Episode: React.FC<Props> = ({id, label, title, description, img, co
             </div>
             <div className={s.textWrapper}>
                 <span className={s.label}>{label}</span>
-                <span className={s.count}>Episode {count}</span>
+                <span className={c.small}>Episode {count}</span>
                 <h3 className={s.title}>{title}</h3>
                 <p className={s.text}>{description}</p>
-                <a href="" className={btn.button}>View Episode Details</a>
+                <a href="" className={c.button}>View Episode Details</a>
             </div>
         </article>
     )

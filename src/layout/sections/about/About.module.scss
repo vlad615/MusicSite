@@ -52,17 +52,8 @@
     }
 }
 
-.small {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #118da8;
-}
-
 .title {
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 1.2;
+    @include title();
     letter-spacing: 0.05em;
     margin-bottom: 30px;
 

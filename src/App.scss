@@ -33,12 +33,6 @@ body {
     min-width: 375px;
 }
 
-h1,
-h2,
-h3 {
-    color: $titleColor;
-}
-
 p {
     font-size: 22px;
     line-height: 1.5;
@@ -48,4 +42,5 @@ p {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 $basePadding;
+    overflow: hidden;
 }
