@@ -1,0 +1,76 @@
+@use "../../../styles/mixins.scss" as *;
+
+.wrapper {
+    @include flexWrapper(null, null, center, null, 60px);
+    padding: 100px 0;
+
+    @include media(tablet) {
+        @include flexWrapper(column-reverse, null, center, null, 40px);
+    }
+
+    @include media(phone) {
+        padding: 60px 20px;
+    }
+
+    ;
+}
+
+.textWrapper {
+    @include flexWrapper(column);
+    max-width: 590px;
+
+    @include media(tablet) {
+        gap: 20px;
+    }
+}
+
+.imgWrapper {
+    max-width: 650px;
+}
+
+.img {
+    object-fit: cover;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.btn {
+    @include flexWrapper(null, center, center);
+    border-radius: 50%;
+    width: 112px;
+    height: 112px;
+    background: #118da8;
+    margin-bottom: 20px;
+    transition-duration: 500ms;
+
+    &:hover {
+        transform: rotate(90deg);
+    }
+
+    @include media(tablet) {
+        margin-bottom: unset;
+    }
+}
+
+.small {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #118da8;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+
+    @include media(tablet) {
+        margin-bottom: unset;
+    }
+}
+
+.description{
+    white-space: pre-wrap;
+}

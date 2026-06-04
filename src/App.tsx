@@ -5,6 +5,7 @@ import { Main } from './layout/sections/main/Main'
 import podcast from "./accets/episodes/podcast.jpg"
 import midi from "./accets/episodes/midi.jpg"
 import mic from "./accets/episodes/mic.jpg"
+import { About } from './layout/sections/about/About'
 
 export function App() {
   const data = {
@@ -62,6 +63,7 @@ export function App() {
       <Header menu={data.menu} />
       <Main resources={data.resources} />
       <Episodes episodes={data.episodes}/>
+      <About />
     </>
   )
 }
