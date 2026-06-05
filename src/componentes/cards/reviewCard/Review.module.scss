@@ -1,0 +1,31 @@
+@use "../../../styles/mixins.scss" as *;
+@use "../../../styles/variables.scss" as *;
+
+.wrapper {
+    @include flexWrapper(column, null, null, null, 20px);
+    // max-width: 425px;
+    border-radius: 32px;
+    flex: 1 1 0;
+    min-width: 336px;
+    padding: 50px;
+    background-color: black;
+
+    @include media(phone){
+        padding: 50px 20px;
+    }
+}
+
+.stars {
+    @include flexWrapper(null, null, null, null, 5px);
+}
+
+.review {
+    font-size: 36px;
+    line-height: 1.2;
+    color: $titleColor;
+}
+
+.name {
+    font-size: 24px;
+    line-height: 1.2;
+}

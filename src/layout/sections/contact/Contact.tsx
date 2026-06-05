@@ -3,7 +3,7 @@ import s from "./Contact.module.scss"
 
 export const Contact = () => {
     return (
-        <section id="#contact">
+        <section id="contact">
             <div className="container">
                 <div className={s.wrapper}>
                     <div className={s.titleWrapper}>

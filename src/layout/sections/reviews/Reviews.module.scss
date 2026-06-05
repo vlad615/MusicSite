@@ -1,0 +1,7 @@
+@use "../../../styles/mixins.scss" as *;
+
+.wrapper {
+    @include flexWrapper(null, null, null, wrap, 15px);
+    padding: 100px 0;
+
+}

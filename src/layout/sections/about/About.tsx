@@ -6,7 +6,7 @@ import btn from "../../../accets/Frame.png"
 
 export const About = () => {
     return (
-        <section id="#about">
+        <section id="about">
             <div className="container">
                 <div className={s.wrapper}>
                     <div className={s.textWrapper}>
