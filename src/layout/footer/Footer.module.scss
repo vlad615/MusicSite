@@ -1,0 +1,44 @@
+@use "../../styles/mixins.scss" as *;
+
+.wrapper{
+    padding: 100px 0px;    
+    @include flexWrapper(null, space-between, null, null, 50px);
+
+    @include media(tablet){
+        flex-direction: column;
+        gap: 130px;
+    }
+
+    @include media(phone){
+        padding: 60px 0;
+        gap: 80px;
+    }
+}
+
+.logo{
+    margin-bottom: 20px;
+}
+
+.navigateWrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-right: 210px;
+
+    @include media(phone){
+        flex-direction: column;
+        gap: 60px;
+    }
+}
+
+.leftMg{
+    margin-left: 120px;
+
+    @include media(large){
+        margin-left: 20px;
+    }
+
+    @include media(phone){
+        margin-left: unset;
+    }
+}

@@ -7,14 +7,15 @@ type MenuItem = {
 
 export type MenuProps = {
     menu: MenuItem[]
-    mobileMenu?: boolean
-    onClick?: ()=>void
+    columnMenu?: boolean | null
+    mobileMenu?: boolean | null
+    onClick?: ()=>void | null
 }
 
-export const Menu = ({menu, mobileMenu, onClick}: MenuProps) => {
+export const Menu = ({menu, columnMenu, mobileMenu, onClick}: MenuProps) => {
     return (
         <nav>
-            <ul className={mobileMenu? s.mobileMenu : s.desktopMenu}>
+            <ul className={`${mobileMenu? s.mobileMenu : s.desktopMenu} ${columnMenu && s.column}`}>
                 {menu.map((item) => {
                     return (
                         <li key={item.id} onClick={onClick}>

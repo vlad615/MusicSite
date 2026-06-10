@@ -8,6 +8,7 @@ import mic from "./accets/episodes/mic.jpg"
 import { About } from './layout/sections/about/About'
 import { Contact } from './layout/sections/contact/Contact'
 import { Reviews } from './layout/sections/reviews/Reviews'
+import { Footer } from './layout/footer/Footer'
 
 export function App() {
   const data = {
@@ -15,7 +16,7 @@ export function App() {
       { id: "main", title: "Home" },
       { id: "episodes", title: "Episodes" },
       { id: "about", title: "About" },
-      { id: "contact", title: "Contact" }
+      { id: "contact", title: "Contacts" }
     ],
 
     resources: [
@@ -66,25 +67,25 @@ export function App() {
       },
       {
         id: crypto.randomUUID(),
-        grade: 1,
+        grade: 5,
         name: "Adam Driver",
         text: "Jacob is the best in the business"
       },
       {
         id: crypto.randomUUID(),
-        grade: 2,
+        grade: 5,
         name: "Marcus Brown",
         text: "A wealth of audio knowledge"
       }, 
       {
         id: crypto.randomUUID(),
-        grade: 3,
+        grade: 5,
         name: "Jessica Knowl",
         text: "Every episode is a gem!"
       }, 
       {
         id: crypto.randomUUID(),
-        grade: 4,
+        grade: 5,
         name:  "Scott Adams",
         text: "Whoa whoa, let me take some notes!"
       }, 
@@ -107,6 +108,10 @@ export function App() {
       <About />
       <Contact />
       <Reviews reviews={data.reviews}/>
+      <Footer contacts={data.contacts} 
+              menu={data.menu}
+              resources={data.resources} 
+              />
     </>
   )
 }

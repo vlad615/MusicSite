@@ -5,6 +5,10 @@
     @include menu()
 }
 
+.column {
+    @include menu(column, null, null, 400, 10px)
+}
+
 .mobileMenu {
     @include menu(column, center, center, 600);
     position: fixed;
