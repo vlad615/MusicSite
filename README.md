@@ -1,73 +1,46 @@
-# React + TypeScript + Vite
+﻿# MusicSite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MusicSite — это современный одностраничный лендинг для музыкального или подкаст-проекта, созданный на **React + TypeScript + Vite**. Проект демонстрирует модульную архитектуру, адаптивный дизайн, работу со стилями через **SASS** и **CSS-модули**, а также организацию контента через компонентную структуру.
 
-Currently, two official plugins are available:
+## Что реализовано
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Адаптивный лендинг с разделами: **Home**, **Episodes**, **About**, **Contact**, **Reviews**.
+- Компонентная архитектура: шапка, основная секция, карточки эпизодов, отзывы, футер.
+- Динамическое заполнение контента через объект `data` в `src/App.tsx`.
+- Изоляция стилей с помощью **SCSS**
+- Навигация по якорям и активное мобильное меню.
 
-## React Compiler
+## Технический стек
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19**
+- **TypeScript**
+- **Vite**
+- **SASS / SCSS**
 
-## Expanding the ESLint configuration
+## Установка и запуск
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Установите зависимости:
+   ```bash
+   pnpm install
+   ```
+2. Запустите локальный сервер:
+   ```bash
+   pnpm run dev
+   ```
+3. Откройте указанный в терминале адрес, чтобы просмотреть сайт.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Или открыть GHPagas https://vlad615.github.io/MusicSite/
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Структура проекта
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- `src/App.tsx` — главный компонент приложения, где собираются данные и подключаются секции.
+- `src/main.tsx` — точка входа приложения.
+- `src/layout/header/Header.tsx` — шапка сайта с навигацией.
+- `src/layout/sections/main/Main.tsx` — главная секция с визуальным представлением проекта.
+- `src/layout/sections/episodes/Episodes.tsx` — секция с карточками эпизодов.
+- `src/layout/sections/about/About.tsx` — информация о проекте или ведущем.
+- `src/layout/sections/contact/Contact.tsx` — блок контактов и форма для связи.
+- `src/layout/sections/reviews/Reviews.tsx` — отзывы пользователей.
+- `src/layout/footer/Footer.tsx` — футер с дополнительными ссылками и контактами.
+- `src/componentes/cards/episodeCard/Episode.tsx` — компонент карточки эпизода.
+- `src/componentes/cards/reviewCard/Review.tsx` — компонент карточки отзыва.
